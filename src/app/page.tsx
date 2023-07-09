@@ -50,26 +50,24 @@ export default function Home() {
   };
   return (
     <main className="bg-black font-firasans">
-      <div className=" text-yellow-400 mx-5 xl:mx-16">
-        <div className="block lg:flex md:flex-1 sm:flex-1 md:mx-auto sm:mx-auto justify-between h-10 mb-40 ">
-          <div className="h-20 w-auto">
-            <Image
-              className="block md:mx-auto sm:mx-auto h-10 object-cover"
-              src="/cr7logo.jpg"
-              width={100}
-              height={100}
-              alt="Picture of the author"
-            />
-          </div>
-          <div className="max-sm:bg-white md:bg-yellow-400 lg:bg-red-500">
-            <button className="xl:mr-5 " onClick={handleClick}>
+      <div className=" text-yellow-400 max-sm:mx-0 sm:mx-16">
+        <div className="flex justify-between w-auto h-20 max-sm:h-10">
+          <Image
+            className="w-40 max-sm:w-20"
+            src="/cr7logo.jpg"
+            alt="Picture of the author"
+            width={160}
+            height={80}
+          />
+          <div className="flex justify-center items-center max-sm:text-xs">
+            <button className="mx-3" onClick={handleClick}>
               CR7DAO Airdrop & Sales
             </button>
-            <button className="text-black  bg-yellow-400 px-5">
+            <a className="text-black px-2 bg-yellow-400 mx-3" href="#">
               Smart Contact
-            </button>
+            </a>
             {!currentAccount && (
-              <button className="px-5" onClick={connectWallet}>
+              <button className="mx-3" onClick={connectWallet}>
                 Connect
               </button>
             )}
@@ -81,7 +79,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse justify-between">
+        <div className="flex flex-row-reverse justify-between mt-20 max-sm:text-xs">
           <div className="text-center">
             <p className="">CR7-Binance</p>
             <h3 className="">THE CR7 NFT COLLECTION</h3>
