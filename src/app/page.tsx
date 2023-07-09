@@ -61,7 +61,7 @@ export default function Home() {
               alt="Picture of the author"
             />
           </div>
-          <div className="sm:bg-white md:bg-yellow-400 lg:bg-red-500">
+          <div className="max-sm:bg-white md:bg-yellow-400 lg:bg-red-500">
             <button className="xl:mr-5 " onClick={handleClick}>
               CR7DAO Airdrop & Sales
             </button>
