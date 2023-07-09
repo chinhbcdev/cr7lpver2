@@ -49,36 +49,23 @@ export default function Home() {
     }
   };
   return (
-    <main className="bg-black">
-      <div className="font-[heebo] text-yellow-400 mx-16">
-        <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossOrigin=""
-          />
-          {/* <link
-            href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
-            rel="stylesheet"
-          /> */}
-        </Head>
-
-        <div className="flex justify-between h-10 mb-40">
+    <main className="bg-black font-firasans">
+      <div className=" text-yellow-400 mx-5 xl:mx-16">
+        <div className="block lg:flex md:flex-1 sm:flex-1 md:mx-auto sm:mx-auto justify-between h-10 mb-40 ">
           <div className="h-20 w-auto">
             <Image
-              className="h-10 object-cover"
+              className="block md:mx-auto sm:mx-auto h-10 object-cover"
               src="/cr7logo.jpg"
               width={100}
               height={100}
               alt="Picture of the author"
             />
           </div>
-          <div>
-            <button className="mr-5" onClick={handleClick}>
+          <div className="sm:bg-white md:bg-yellow-400 lg:bg-red-500">
+            <button className="xl:mr-5 " onClick={handleClick}>
               CR7DAO Airdrop & Sales
             </button>
-            <button className="text-black bg-yellow-400 px-5">
+            <button className="text-black  bg-yellow-400 px-5">
               Smart Contact
             </button>
             {!currentAccount && (
